@@ -1,0 +1,6 @@
+:root{
+    --mainColor:red;
+}
+.test{
+    color:var(--mainColor);
+}
