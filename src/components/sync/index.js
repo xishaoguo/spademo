@@ -1,9 +1,11 @@
 import css from "./sync.css";
+import help from "../common/common"
+console.log("help:"+help.version);
 import {isArray} from "lodash-es";
 const isArrayfn = (agrs)=>{
     console.log(isArray(agrs));
 }
-document.getElementById("app").innerHTML=`<h1 class = "${css.test}">你妹的呀</h1>`;
+//document.getElementById("app").innerHTML=`<h1 class = "${css.test}">你妹的呀</h1>`;
 const sync = () =>{
     console.log("sync");
     fetch("/api/test")
